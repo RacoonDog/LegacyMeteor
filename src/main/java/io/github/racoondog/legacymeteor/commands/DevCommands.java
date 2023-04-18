@@ -19,7 +19,7 @@ public class DevCommands extends Command {
     @Override
     public void build(LiteralArgumentBuilder<CommandSource> builder) {
         builder.then(literal("crash").executes(context -> {
-            boolean bool = (Boolean) null;
+            System.exit(0);
             return 0;
         }));
     }
